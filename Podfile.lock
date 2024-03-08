@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (5.8.1)
+  - FLAnimatedImage (1.0.17)
+  - HandyJSON (5.0.2)
+  - IQKeyboardManager (6.5.16)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.7.6)
+  - SDWebImage (5.18.5):
+    - SDWebImage/Core (= 5.18.5)
+  - SDWebImage/Core (5.18.5)
+
+DEPENDENCIES:
+  - Alamofire
+  - FLAnimatedImage
+  - HandyJSON (= 5.0.2)
+  - IQKeyboardManager
+  - MBProgressHUD
+  - MJRefresh
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FLAnimatedImage
+    - HandyJSON
+    - IQKeyboardManager
+    - MBProgressHUD
+    - MJRefresh
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  IQKeyboardManager: 024b54d7dcb765c5bc99882cb4d5ea24a8cb7c3c
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 2fe7fb43a5167ceda20bb7e63f130c04fd1814a5
+  SDWebImage: 7ac2b7ddc5e8484c79aa90fc4e30b149d6a2c88f
+
+PODFILE CHECKSUM: 45df55db4e316bada705847ad9647e8559144b6c
+
+COCOAPODS: 1.13.0

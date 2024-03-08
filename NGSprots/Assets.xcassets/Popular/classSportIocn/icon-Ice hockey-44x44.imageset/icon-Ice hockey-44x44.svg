@@ -1,0 +1,6 @@
+<svg id="icon-Ice_hockey-44x44" data-name="icon-Ice hockey-44x44" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <path id="椭圆形" d="M13,10a5,5,0,1,1-5,5A5,5,0,0,1,13,10Zm0,3a2,2,0,1,0,2,2A2,2,0,0,0,13,13Z" fill="#19263c"/>
+  <path id="矩形" d="M33.394,9.829a2.559,2.559,0,0,1,1.889.05,2.119,2.119,0,0,1,1.13,2.749L25.851,34.1a2.5,2.5,0,0,1-2.243,1.4H13a3.5,3.5,0,1,1,0-7h8.674a2.5,2.5,0,0,0,2.233-1.376l8.076-16.039A2.559,2.559,0,0,1,33.394,9.829Z" fill="none" stroke="#19263c" stroke-width="3" fill-rule="evenodd"/>
+  <rect id="矩形-2" data-name="矩形" width="3" height="7" transform="matrix(0.966, -0.259, 0.259, 0.966, 14.092, 29.202)" fill="#19263c"/>
+  <rect id="切图范围" width="44" height="44" fill="rgba(255,255,255,0)"/>
+</svg>

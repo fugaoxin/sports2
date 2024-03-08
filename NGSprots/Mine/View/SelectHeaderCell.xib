@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SelectHeaderCell" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zc-nD-1E9">
+                        <rect key="frame" x="0.0" y="0.0" width="144" height="153"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xci-Kc-pkG">
+                        <rect key="frame" x="5" y="5" width="134" height="143"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xci-Kc-pkG" secondAttribute="trailing" constant="5" id="7uo-5X-Tju"/>
+                <constraint firstAttribute="bottom" secondItem="xci-Kc-pkG" secondAttribute="bottom" constant="5" id="FaY-X8-Yye"/>
+                <constraint firstItem="8zc-nD-1E9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fxl-gd-fr2"/>
+                <constraint firstAttribute="trailing" secondItem="8zc-nD-1E9" secondAttribute="trailing" id="Mms-bT-lKb"/>
+                <constraint firstItem="xci-Kc-pkG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="R5b-AB-e64"/>
+                <constraint firstItem="8zc-nD-1E9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Spb-fc-DFB"/>
+                <constraint firstAttribute="bottom" secondItem="8zc-nD-1E9" secondAttribute="bottom" id="dg4-OU-Lln"/>
+                <constraint firstItem="xci-Kc-pkG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="uXx-kI-RQS"/>
+            </constraints>
+            <size key="customSize" width="144" height="153"/>
+            <connections>
+                <outlet property="bgView" destination="8zc-nD-1E9" id="pmE-cA-GO6"/>
+                <outlet property="headerIV" destination="xci-Kc-pkG" id="GqM-Fd-WYq"/>
+            </connections>
+            <point key="canvasLocation" x="-27.480916030534349" y="22.183098591549296"/>
+        </collectionViewCell>
+    </objects>
+</document>

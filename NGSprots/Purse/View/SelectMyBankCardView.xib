@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectMyBankCardView" customModule="NGSprots" customModuleProvider="target">
+            <connections>
+                <outlet property="addBtn" destination="XUt-aT-HTp" id="nrQ-gh-abg"/>
+                <outlet property="tableView" destination="3Qw-o0-qQ1" id="ExB-Yx-iCH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aYt-RL-8PT" customClass="SelectMyBankCardView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="451" height="738"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a bank card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOD-UH-fX2">
+                    <rect key="frame" x="160" y="17" width="131.33333333333337" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QX1-B1-twc">
+                    <rect key="frame" x="414" y="16" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="hDA-yB-Z5P"/>
+                        <constraint firstAttribute="width" constant="22" id="lqh-p1-rR2"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="alertClose"/>
+                    <connections>
+                        <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="zsP-dq-AOp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUt-aT-HTp">
+                    <rect key="frame" x="15" y="633" width="421" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="iNH-oW-eSA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="14"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="22.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addClick:" destination="-1" eventType="touchUpInside" id="mgf-Pe-oYj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Bank Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k1o-ND-BYK">
+                    <rect key="frame" x="186" y="648.33333333333337" width="99" height="19.666666666666629"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" red="0.047058823530000002" green="0.83921568629999999" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addBankCard" translatesAutoresizingMaskIntoConstraints="NO" id="JQI-in-YC1">
+                    <rect key="frame" x="160" y="648" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="5Gq-BF-0lx"/>
+                        <constraint firstAttribute="height" constant="20" id="YWs-3q-kZ4"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Qw-o0-qQ1">
+                    <rect key="frame" x="15" y="52" width="421" height="571"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QX1-B1-twc" firstAttribute="centerY" secondItem="nOD-UH-fX2" secondAttribute="centerY" id="3T5-WY-T5a"/>
+                <constraint firstAttribute="bottom" secondItem="XUt-aT-HTp" secondAttribute="bottom" constant="55" id="5FD-nf-DdA"/>
+                <constraint firstItem="k1o-ND-BYK" firstAttribute="centerY" secondItem="XUt-aT-HTp" secondAttribute="centerY" id="AUu-2a-TPr"/>
+                <constraint firstItem="XUt-aT-HTp" firstAttribute="leading" secondItem="aYt-RL-8PT" secondAttribute="leading" constant="15" id="Ch7-r4-cd6"/>
+                <constraint firstItem="nOD-UH-fX2" firstAttribute="top" secondItem="aYt-RL-8PT" secondAttribute="top" constant="17" id="FPG-1D-OtJ"/>
+                <constraint firstItem="3Qw-o0-qQ1" firstAttribute="leading" secondItem="aYt-RL-8PT" secondAttribute="leading" constant="15" id="I07-Dz-Zgp"/>
+                <constraint firstItem="3Qw-o0-qQ1" firstAttribute="top" secondItem="nOD-UH-fX2" secondAttribute="bottom" constant="15" id="I9Q-vb-Bjy"/>
+                <constraint firstItem="k1o-ND-BYK" firstAttribute="centerX" secondItem="XUt-aT-HTp" secondAttribute="centerX" constant="10" id="J2g-Rv-diN"/>
+                <constraint firstItem="JQI-in-YC1" firstAttribute="centerY" secondItem="k1o-ND-BYK" secondAttribute="centerY" id="JCV-0l-3rz"/>
+                <constraint firstAttribute="trailing" secondItem="3Qw-o0-qQ1" secondAttribute="trailing" constant="15" id="S3c-GR-3uh"/>
+                <constraint firstAttribute="trailing" secondItem="QX1-B1-twc" secondAttribute="trailing" constant="15" id="ViH-AJ-aLA"/>
+                <constraint firstAttribute="trailing" secondItem="XUt-aT-HTp" secondAttribute="trailing" constant="15" id="dfq-pk-KQu"/>
+                <constraint firstItem="XUt-aT-HTp" firstAttribute="top" secondItem="3Qw-o0-qQ1" secondAttribute="bottom" constant="10" id="gph-pg-SLL"/>
+                <constraint firstItem="k1o-ND-BYK" firstAttribute="leading" secondItem="JQI-in-YC1" secondAttribute="trailing" constant="6" id="rSe-ti-QmT"/>
+                <constraint firstItem="nOD-UH-fX2" firstAttribute="centerX" secondItem="aYt-RL-8PT" secondAttribute="centerX" id="vpX-5P-cOq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="159.54198473282443" y="48.591549295774648"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="addBankCard" width="40" height="40"/>
+        <image name="alertClose" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterActivityAlertView" customModule="NGSprots" customModuleProvider="target">
+            <connections>
+                <outlet property="numberLB" destination="ayq-fX-fwG" id="DoE-3z-mwX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="HhK-qs-dZY" customClass="RegisterActivityAlertView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="654"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="registerActivityBg" translatesAutoresizingMaskIntoConstraints="NO" id="Sjk-Nt-DEn">
+                    <rect key="frame" x="25" y="0.0" width="343" height="263"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Sjk-Nt-DEn" secondAttribute="height" multiplier="660:506" id="aPE-aK-Fy4"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Now And Claim NGN 2,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayq-fX-fwG">
+                    <rect key="frame" x="58.666666666666657" y="263" width="275.66666666666674" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="VMz-O3-9VF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSP-nL-EfH">
+                    <rect key="frame" x="69" y="297" width="255" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="255" id="7Wc-IN-na4"/>
+                        <constraint firstAttribute="height" constant="70" id="EbO-Xz-6fF"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="registerBtnBg"/>
+                    <state key="highlighted" backgroundImage="registerBtnBg"/>
+                    <connections>
+                        <action selector="goToActivityClick:" destination="-1" eventType="touchUpInside" id="tq4-12-c1B"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQU-um-biO">
+                    <rect key="frame" x="176.66666666666666" y="407" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="NwT-fG-rdl"/>
+                        <constraint firstAttribute="height" constant="40" id="ktB-qs-2GK"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="checkInClose"/>
+                    <connections>
+                        <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="WaK-oN-K2U"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Sjk-Nt-DEn" firstAttribute="top" secondItem="HhK-qs-dZY" secondAttribute="top" id="5ca-6c-czh"/>
+                <constraint firstAttribute="trailing" secondItem="Sjk-Nt-DEn" secondAttribute="trailing" constant="25" id="CUS-1J-HMB"/>
+                <constraint firstItem="WQU-um-biO" firstAttribute="centerX" secondItem="aSP-nL-EfH" secondAttribute="centerX" id="W85-UC-ZUj"/>
+                <constraint firstItem="Sjk-Nt-DEn" firstAttribute="leading" secondItem="HhK-qs-dZY" secondAttribute="leading" constant="25" id="d46-3k-Cqb"/>
+                <constraint firstItem="aSP-nL-EfH" firstAttribute="top" secondItem="ayq-fX-fwG" secondAttribute="bottom" constant="10" id="fpM-E0-Wxr"/>
+                <constraint firstItem="ayq-fX-fwG" firstAttribute="centerX" secondItem="HhK-qs-dZY" secondAttribute="centerX" id="gzK-bk-V6C"/>
+                <constraint firstItem="WQU-um-biO" firstAttribute="top" secondItem="aSP-nL-EfH" secondAttribute="bottom" constant="40" id="kwQ-l4-eyo"/>
+                <constraint firstItem="ayq-fX-fwG" firstAttribute="top" secondItem="Sjk-Nt-DEn" secondAttribute="bottom" id="m0p-uf-zbw"/>
+                <constraint firstItem="aSP-nL-EfH" firstAttribute="centerX" secondItem="ayq-fX-fwG" secondAttribute="centerX" id="vrK-5P-2jj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-2.2900763358778624" y="52.816901408450704"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkInClose" width="80" height="80"/>
+        <image name="registerActivityBg" width="660" height="506"/>
+        <image name="registerBtnBg" width="510" height="140"/>
+    </resources>
+</document>

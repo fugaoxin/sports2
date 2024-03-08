@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsController" customModule="NGSprots" customModuleProvider="target">
+            <connections>
+                <outlet property="bgview" destination="Hbi-gP-Q0e" id="EUV-Wa-R9v"/>
+                <outlet property="textLabel" destination="TPu-BE-A73" id="fv8-OM-WWI"/>
+                <outlet property="version" destination="HAJ-Or-0al" id="jEj-bS-cKE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="760"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbi-gP-Q0e">
+                    <rect key="frame" x="15" y="74" width="363" height="652"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bsports" translatesAutoresizingMaskIntoConstraints="NO" id="dwH-Q9-ja8">
+                            <rect key="frame" x="159" y="15" width="45" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="RC1-dT-LfQ"/>
+                                <constraint firstAttribute="width" constant="45" id="vKh-hL-3uM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bsports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEd-2f-ddm">
+                            <rect key="frame" x="155" y="70" width="53" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="dLA-qo-pPK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                            <color key="textColor" red="0.050980392159999999" green="0.050980392159999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version : 1.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAJ-Or-0al">
+                            <rect key="frame" x="147.66666666666666" y="88" width="68" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="foS-VB-iSD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                            <color key="textColor" red="0.050980392159999999" green="0.050980392159999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hh" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPu-BE-A73">
+                            <rect key="frame" x="15" y="120" width="333" height="14.333333333333343"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" red="0.050980392159999999" green="0.050980392159999999" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TPu-BE-A73" secondAttribute="trailing" constant="15" id="EVr-uR-3CD"/>
+                        <constraint firstItem="TPu-BE-A73" firstAttribute="top" secondItem="HAJ-Or-0al" secondAttribute="bottom" constant="20" id="Gso-NU-TYq"/>
+                        <constraint firstItem="dwH-Q9-ja8" firstAttribute="top" secondItem="Hbi-gP-Q0e" secondAttribute="top" constant="15" id="Xqi-hM-3EM"/>
+                        <constraint firstItem="HAJ-Or-0al" firstAttribute="top" secondItem="EEd-2f-ddm" secondAttribute="bottom" constant="1" id="Ynv-MK-aAO"/>
+                        <constraint firstItem="dwH-Q9-ja8" firstAttribute="centerX" secondItem="Hbi-gP-Q0e" secondAttribute="centerX" id="dQM-VY-rZS"/>
+                        <constraint firstItem="HAJ-Or-0al" firstAttribute="centerX" secondItem="EEd-2f-ddm" secondAttribute="centerX" id="lKU-mV-QV6"/>
+                        <constraint firstItem="EEd-2f-ddm" firstAttribute="top" secondItem="dwH-Q9-ja8" secondAttribute="bottom" constant="10" id="oXc-Wz-tNT"/>
+                        <constraint firstItem="TPu-BE-A73" firstAttribute="leading" secondItem="Hbi-gP-Q0e" secondAttribute="leading" constant="15" id="pNZ-SJ-tnB"/>
+                        <constraint firstItem="EEd-2f-ddm" firstAttribute="centerX" secondItem="dwH-Q9-ja8" secondAttribute="centerX" id="uAf-KL-JzD"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Hbi-gP-Q0e" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="BSR-SN-Lw6"/>
+                <constraint firstItem="Hbi-gP-Q0e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="SAU-WV-FJk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hbi-gP-Q0e" secondAttribute="trailing" constant="15" id="eNI-XK-YHF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hbi-gP-Q0e" secondAttribute="bottom" id="leR-EW-fan"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Bsports" width="100" height="100"/>
+    </resources>
+</document>

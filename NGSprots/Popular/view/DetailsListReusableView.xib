@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="DetailsListReusableView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuN-lS-Gq4">
+                    <rect key="frame" x="10" y="0.0" width="373" height="150"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="让球" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiT-XE-pMe">
+                    <rect key="frame" x="20" y="78.666666666666671" width="30.666666666666671" height="18"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgQ-HB-RzW">
+                    <rect key="frame" x="313" y="75" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="39X-J6-xW4"/>
+                        <constraint firstAttribute="width" constant="25" id="Z9m-Od-p0S"/>
+                    </constraints>
+                    <color key="tintColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="biaoji_icon"/>
+                    <state key="selected" backgroundImage="biaoji_icon 1"/>
+                    <connections>
+                        <action selector="clickBiaoji:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Vqr-3e-LBh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA0-tT-uiQ">
+                    <rect key="frame" x="348" y="75" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="j4U-gQ-8Gc"/>
+                        <constraint firstAttribute="width" constant="25" id="nkW-Eh-gG3"/>
+                    </constraints>
+                    <color key="tintColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="23_icon-1"/>
+                    <state key="selected" backgroundImage="23_icon2"/>
+                    <connections>
+                        <action selector="clickshoucang:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="QlI-Vr-1sV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TuN-lS-Gq4" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="1Jz-NR-OXt"/>
+                <constraint firstItem="aA0-tT-uiQ" firstAttribute="leading" secondItem="PgQ-HB-RzW" secondAttribute="trailing" constant="10" id="BtJ-Cp-yVA"/>
+                <constraint firstAttribute="top" secondItem="TuN-lS-Gq4" secondAttribute="top" id="HZI-Ju-LW3"/>
+                <constraint firstItem="PgQ-HB-RzW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZiT-XE-pMe" secondAttribute="trailing" constant="10" id="Vp5-fL-8fP"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="TuN-lS-Gq4" secondAttribute="trailing" constant="10" id="dSd-E8-35B"/>
+                <constraint firstItem="ZiT-XE-pMe" firstAttribute="centerY" secondItem="VXr-Tz-HHm" secondAttribute="centerY" id="gtE-ca-keH"/>
+                <constraint firstItem="TuN-lS-Gq4" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottom" id="j6X-TH-rTY"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="aA0-tT-uiQ" secondAttribute="trailing" constant="20" id="nd1-9J-mFE"/>
+                <constraint firstItem="aA0-tT-uiQ" firstAttribute="centerY" secondItem="ZiT-XE-pMe" secondAttribute="centerY" id="rQq-ZD-Jda"/>
+                <constraint firstItem="ZiT-XE-pMe" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="20" id="wWy-xa-v9T"/>
+                <constraint firstItem="PgQ-HB-RzW" firstAttribute="centerY" secondItem="aA0-tT-uiQ" secondAttribute="centerY" id="xOr-wG-yA9"/>
+            </constraints>
+            <connections>
+                <outlet property="bglabel" destination="TuN-lS-Gq4" id="5sE-OM-chP"/>
+                <outlet property="biaojibtn" destination="PgQ-HB-RzW" id="xsU-0Q-apG"/>
+                <outlet property="titleLabel" destination="ZiT-XE-pMe" id="SlN-3m-Kvu"/>
+                <outlet property="zanbtn" destination="aA0-tT-uiQ" id="iRR-A2-5UZ"/>
+            </connections>
+            <point key="canvasLocation" x="138.1679389312977" y="19.718309859154932"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="23_icon-1" width="44" height="44"/>
+        <image name="23_icon2" width="40" height="40"/>
+        <image name="biaoji_icon" width="40" height="40"/>
+        <image name="biaoji_icon 1" width="40" height="40"/>
+    </resources>
+</document>

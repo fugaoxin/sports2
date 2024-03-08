@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="FooterLineReusableView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="4w1-xe-uvV">
+                    <rect key="frame" x="15" y="10" width="84" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Cib-LI-TAI"/>
+                        <constraint firstAttribute="width" constant="84" id="kpu-ks-Xxb"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组 124287" translatesAutoresizingMaskIntoConstraints="NO" id="GSu-Qf-acI">
+                    <rect key="frame" x="105" y="10" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="ZFV-x7-WRM"/>
+                        <constraint firstAttribute="height" constant="25" id="ZnN-Sh-yh9"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="组 124286" translatesAutoresizingMaskIntoConstraints="NO" id="Rpm-0V-WQK">
+                    <rect key="frame" x="138" y="10" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="PVb-UJ-NQ3"/>
+                        <constraint firstAttribute="width" constant="25" id="Wxd-Ye-bzE"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BO9-sH-njZ">
+                    <rect key="frame" x="348" y="12.5" width="30" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="EtV-8L-Wn3"/>
+                        <constraint firstAttribute="height" constant="20" id="SWC-dK-z8S"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="路径 8628"/>
+                    <state key="selected" image="路径 8627"/>
+                    <connections>
+                        <action selector="clickList:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="6zM-us-vCj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FOLLOW US" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ska-zB-uoF">
+                    <rect key="frame" x="274.5" y="15.5" width="72.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" red="0.098039215686274508" green="0.14901960784313725" blue="0.23529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlt-f1-ord">
+                    <rect key="frame" x="15" y="45" width="348" height="0.5"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.87843137250000003" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="l0Q-N4-dQC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-aG-SFl">
+                    <rect key="frame" x="154" y="62" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Pyo-LG-4KI"/>
+                        <constraint firstAttribute="width" constant="25" id="dbd-qZ-JMP"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="FACEBOOK"/>
+                    <state key="selected" image="FACEBOOK"/>
+                    <connections>
+                        <action selector="clickFollowUs:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="eyf-9y-oyw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BST-dE-ehC">
+                    <rect key="frame" x="209" y="62" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="eZ1-Dc-6BI"/>
+                        <constraint firstAttribute="width" constant="25" id="l6N-xa-PxV"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="IG"/>
+                    <state key="selected" image="IG"/>
+                    <connections>
+                        <action selector="clickFollowUs:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="I7Q-We-g7C"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDJ-5Y-ZyB">
+                    <rect key="frame" x="264" y="62" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="ezK-yA-01X"/>
+                        <constraint firstAttribute="height" constant="25" id="jSh-Y5-eHS"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="X"/>
+                    <state key="selected" image="x"/>
+                    <connections>
+                        <action selector="clickFollowUs:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="IBF-ce-Wa8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vt-6x-nuV">
+                    <rect key="frame" x="319" y="62" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="817-UO-eAp"/>
+                        <constraint firstAttribute="width" constant="25" id="DhD-NV-rde"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="TELEGRAM"/>
+                    <state key="selected" image="TELEGRAM"/>
+                    <connections>
+                        <action selector="clickFollowUs:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="FUi-5n-lKY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ4-Oo-eEb">
+                    <rect key="frame" x="99" y="62" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="Jch-Jv-1Tg"/>
+                        <constraint firstAttribute="height" constant="25" id="pRK-c4-9Xc"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="mail"/>
+                    <state key="selected" image="email"/>
+                    <connections>
+                        <action selector="clickFollowUs:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="zXh-eO-UzQ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjM-tl-WgT">
+                    <rect key="frame" x="44" y="62" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="CCc-JS-T30"/>
+                        <constraint firstAttribute="height" constant="25" id="Uqi-rc-jyx"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="telephone"/>
+                    <state key="selected" image="telephone"/>
+                    <connections>
+                        <action selector="clickFollowUs:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="FNx-Wx-YKW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehp-lw-5OM">
+                    <rect key="frame" x="15" y="5" width="363" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="RbS-ee-OXo"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="clickList:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="vjf-Tj-gCY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GSu-Qf-acI" firstAttribute="centerY" secondItem="4w1-xe-uvV" secondAttribute="centerY" id="0YZ-RL-hhu"/>
+                <constraint firstItem="Ehp-lw-5OM" firstAttribute="trailing" secondItem="BO9-sH-njZ" secondAttribute="trailing" id="6Mi-47-j5n"/>
+                <constraint firstItem="6sJ-aG-SFl" firstAttribute="leading" secondItem="qQ4-Oo-eEb" secondAttribute="trailing" constant="30" id="8gB-gi-QTx"/>
+                <constraint firstItem="GSu-Qf-acI" firstAttribute="leading" secondItem="4w1-xe-uvV" secondAttribute="trailing" constant="6" id="9yc-Xq-SkV"/>
+                <constraint firstItem="Ska-zB-uoF" firstAttribute="centerY" secondItem="BO9-sH-njZ" secondAttribute="centerY" id="BuW-GB-fLa"/>
+                <constraint firstItem="2Vt-6x-nuV" firstAttribute="centerY" secondItem="SDJ-5Y-ZyB" secondAttribute="centerY" id="Bvg-9g-dBm"/>
+                <constraint firstItem="BO9-sH-njZ" firstAttribute="leading" secondItem="Ska-zB-uoF" secondAttribute="trailing" constant="1" id="Cyw-Ke-P08"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="BO9-sH-njZ" secondAttribute="trailing" constant="15" id="Gcj-Gy-5Rk"/>
+                <constraint firstItem="Ehp-lw-5OM" firstAttribute="leading" secondItem="4w1-xe-uvV" secondAttribute="leading" id="Gos-qc-5hJ"/>
+                <constraint firstItem="Rpm-0V-WQK" firstAttribute="leading" secondItem="GSu-Qf-acI" secondAttribute="trailing" constant="8" id="NlX-W6-e87"/>
+                <constraint firstItem="KjM-tl-WgT" firstAttribute="centerY" secondItem="qQ4-Oo-eEb" secondAttribute="centerY" id="P2v-Dc-jcL"/>
+                <constraint firstItem="4w1-xe-uvV" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="P4s-TZ-ye7"/>
+                <constraint firstItem="qQ4-Oo-eEb" firstAttribute="centerY" secondItem="6sJ-aG-SFl" secondAttribute="centerY" id="Pp1-CN-iPD"/>
+                <constraint firstItem="SDJ-5Y-ZyB" firstAttribute="leading" secondItem="BST-dE-ehC" secondAttribute="trailing" constant="30" id="QWW-vl-Oif"/>
+                <constraint firstItem="BST-dE-ehC" firstAttribute="centerY" secondItem="6sJ-aG-SFl" secondAttribute="centerY" id="Qdu-EG-rbu"/>
+                <constraint firstItem="BST-dE-ehC" firstAttribute="leading" secondItem="6sJ-aG-SFl" secondAttribute="trailing" constant="30" id="S5A-aw-O1a"/>
+                <constraint firstItem="4w1-xe-uvV" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="15" id="TCJ-DD-aSw"/>
+                <constraint firstItem="dlt-f1-ord" firstAttribute="top" secondItem="4w1-xe-uvV" secondAttribute="bottom" constant="10" id="Xwu-n5-Wfj"/>
+                <constraint firstItem="Ehp-lw-5OM" firstAttribute="centerY" secondItem="4w1-xe-uvV" secondAttribute="centerY" id="bH5-cI-rS6"/>
+                <constraint firstItem="qQ4-Oo-eEb" firstAttribute="leading" secondItem="KjM-tl-WgT" secondAttribute="trailing" constant="30" id="eUe-RF-cFA"/>
+                <constraint firstItem="6sJ-aG-SFl" firstAttribute="centerX" secondItem="VXr-Tz-HHm" secondAttribute="centerX" constant="-30" id="ejg-vy-naC"/>
+                <constraint firstItem="SDJ-5Y-ZyB" firstAttribute="centerY" secondItem="BST-dE-ehC" secondAttribute="centerY" id="f0k-qx-QIF"/>
+                <constraint firstItem="BO9-sH-njZ" firstAttribute="centerY" secondItem="Rpm-0V-WQK" secondAttribute="centerY" id="kCQ-TK-9MR"/>
+                <constraint firstItem="6sJ-aG-SFl" firstAttribute="top" secondItem="dlt-f1-ord" secondAttribute="bottom" constant="16.5" id="mjQ-lD-gpz"/>
+                <constraint firstItem="dlt-f1-ord" firstAttribute="leading" secondItem="4w1-xe-uvV" secondAttribute="leading" id="q98-7E-4gp"/>
+                <constraint firstItem="Rpm-0V-WQK" firstAttribute="centerY" secondItem="GSu-Qf-acI" secondAttribute="centerY" id="thv-Wh-27q"/>
+                <constraint firstItem="2Vt-6x-nuV" firstAttribute="leading" secondItem="SDJ-5Y-ZyB" secondAttribute="trailing" constant="30" id="wHl-rx-KFH"/>
+                <constraint firstItem="dlt-f1-ord" firstAttribute="trailing" secondItem="BO9-sH-njZ" secondAttribute="trailing" constant="-15" id="wwo-Gk-YDZ"/>
+            </constraints>
+            <connections>
+                <outlet property="line" destination="dlt-f1-ord" id="YTa-Jp-Bsm"/>
+                <outlet property="vbtn" destination="BO9-sH-njZ" id="bwV-Q7-Fhv"/>
+            </connections>
+            <point key="canvasLocation" x="194.92753623188406" y="74.665178571428569"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="FACEBOOK" width="50" height="50"/>
+        <image name="IG" width="50" height="50"/>
+        <image name="TELEGRAM" width="50" height="50"/>
+        <image name="X" width="50" height="50"/>
+        <image name="email" width="50" height="50"/>
+        <image name="logo_icon" width="205" height="60"/>
+        <image name="mail" width="50" height="50"/>
+        <image name="telephone" width="50" height="50"/>
+        <image name="x" width="50" height="50"/>
+        <image name="组 124286" width="50" height="50"/>
+        <image name="组 124287" width="50" height="50"/>
+        <image name="路径 8627" width="10.5" height="6.5"/>
+        <image name="路径 8628" width="10.5" height="6.5"/>
+    </resources>
+</document>

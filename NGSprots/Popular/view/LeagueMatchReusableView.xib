@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="LeagueMatchReusableView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qv5-9v-u5L">
+                    <rect key="frame" x="0.0" y="0.0" width="338" height="119"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Basketball_icon2" translatesAutoresizingMaskIntoConstraints="NO" id="jCk-hd-koC">
+                    <rect key="frame" x="10" y="72.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="Yl2-Tn-6aJ"/>
+                        <constraint firstAttribute="height" constant="22" id="azN-uj-Wxq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="China Championship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYP-9f-9Km">
+                    <rect key="frame" x="37" y="77.5" width="101.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                    <color key="textColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQC-xI-SSr">
+                    <rect key="frame" x="274" y="72.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="6t4-Zu-b3j"/>
+                        <constraint firstAttribute="height" constant="22" id="WzN-kA-UeR"/>
+                    </constraints>
+                    <color key="tintColor" red="0.96470588235294119" green="0.96078431372549022" blue="0.96078431372549022" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="warn_icon"/>
+                    <state key="selected" backgroundImage="weishoucan_icon"/>
+                    <connections>
+                        <action selector="clickLDBtn:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="8AK-Pf-ant"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3U-EU-frv">
+                    <rect key="frame" x="306" y="72.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="DUC-gw-7VN"/>
+                        <constraint firstAttribute="width" constant="22" id="jgi-IJ-DGj"/>
+                    </constraints>
+                    <color key="tintColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="Collect_icon"/>
+                    <state key="selected" backgroundImage="Collect_icon 1"/>
+                    <connections>
+                        <action selector="clickCollect:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="5VR-2O-xLI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="stv-dm-Dhw">
+                    <rect key="frame" x="242" y="72.5" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="DVr-JF-e3O"/>
+                        <constraint firstAttribute="height" constant="22" id="zqE-Z6-Cl6"/>
+                    </constraints>
+                    <color key="tintColor" red="0.96470588239999999" green="0.96078431369999995" blue="0.96078431369999995" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="warn_icon-2"/>
+                    <state key="selected" backgroundImage="warn_icon-2"/>
+                    <connections>
+                        <action selector="clickVideoBtn:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="kdp-Bj-Its"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="stv-dm-Dhw" firstAttribute="centerY" secondItem="MQC-xI-SSr" secondAttribute="centerY" id="88Z-hz-KaN"/>
+                <constraint firstItem="nYP-9f-9Km" firstAttribute="centerY" secondItem="jCk-hd-koC" secondAttribute="centerY" id="8ve-gz-ghC"/>
+                <constraint firstItem="o3U-EU-frv" firstAttribute="centerY" secondItem="MQC-xI-SSr" secondAttribute="centerY" id="90o-NR-D2g"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="qv5-9v-u5L" secondAttribute="bottom" id="GZZ-CD-jHq"/>
+                <constraint firstItem="qv5-9v-u5L" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="ITy-1D-98c"/>
+                <constraint firstItem="nYP-9f-9Km" firstAttribute="leading" secondItem="jCk-hd-koC" secondAttribute="trailing" constant="5" id="K0p-sB-TiA"/>
+                <constraint firstItem="qv5-9v-u5L" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="QFY-Ec-MuX"/>
+                <constraint firstItem="o3U-EU-frv" firstAttribute="leading" secondItem="MQC-xI-SSr" secondAttribute="trailing" constant="10" id="RXg-nh-87K"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="o3U-EU-frv" secondAttribute="trailing" constant="10" id="ZB6-W7-8kk"/>
+                <constraint firstItem="MQC-xI-SSr" firstAttribute="centerY" secondItem="nYP-9f-9Km" secondAttribute="centerY" id="dsh-RL-brt"/>
+                <constraint firstItem="stv-dm-Dhw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nYP-9f-9Km" secondAttribute="trailing" constant="10" id="hrH-Qo-Rdw"/>
+                <constraint firstItem="jCk-hd-koC" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="hxq-Zx-omg"/>
+                <constraint firstItem="MQC-xI-SSr" firstAttribute="leading" secondItem="stv-dm-Dhw" secondAttribute="trailing" constant="10" id="mWz-J6-q8z"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="qv5-9v-u5L" secondAttribute="trailing" id="mdv-nl-Zuk"/>
+                <constraint firstItem="jCk-hd-koC" firstAttribute="centerY" secondItem="VXr-Tz-HHm" secondAttribute="centerY" id="xJd-5L-djD"/>
+            </constraints>
+            <connections>
+                <outlet property="collectBtn" destination="o3U-EU-frv" id="f3e-Gx-n8U"/>
+                <outlet property="logoImage" destination="jCk-hd-koC" id="mVv-di-nB5"/>
+                <outlet property="titleLabel" destination="nYP-9f-9Km" id="QA8-TB-1DS"/>
+            </connections>
+            <point key="canvasLocation" x="150.72463768115944" y="144.30803571428569"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Basketball_icon2" width="60" height="60"/>
+        <image name="Collect_icon" width="44" height="44"/>
+        <image name="Collect_icon 1" width="44" height="44"/>
+        <image name="warn_icon" width="44" height="44"/>
+        <image name="warn_icon-2" width="44" height="44"/>
+        <image name="weishoucan_icon" width="28.5" height="28.5"/>
+    </resources>
+</document>

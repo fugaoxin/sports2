@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DepositActivityAlertView" customModule="NGSprots" customModuleProvider="target">
+            <connections>
+                <outlet property="rateLB" destination="thg-Kg-Okj" id="b0I-5e-jgT"/>
+                <outlet property="rateLBBottomSpace" destination="j8O-69-e6c" id="0v1-NV-axp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Qad-Cn-uXg" customClass="DepositActivityAlertView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="565"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="depositActivityBg" translatesAutoresizingMaskIntoConstraints="NO" id="IfM-UK-hrP">
+                    <rect key="frame" x="25" y="0.0" width="304" height="253.33333333333334"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISM-07-be2">
+                    <rect key="frame" x="157" y="293.33333333333331" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="3nI-FF-fwI"/>
+                        <constraint firstAttribute="height" constant="40" id="Xtm-AY-FuY"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" backgroundImage="checkInClose"/>
+                    <connections>
+                        <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="BAg-uP-YMO"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thg-Kg-Okj">
+                    <rect key="frame" x="156" y="152.33333333333334" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3s-C6-SAH">
+                    <rect key="frame" x="60" y="198.33333333333334" width="234" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="h0c-sJ-mua"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="goToActivityClick:" destination="-1" eventType="touchUpInside" id="HH4-4S-pSm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="ISM-07-be2" firstAttribute="top" secondItem="IfM-UK-hrP" secondAttribute="bottom" constant="40" id="2uw-Nz-uGq"/>
+                <constraint firstAttribute="trailing" secondItem="IfM-UK-hrP" secondAttribute="trailing" constant="25" id="46E-Jg-q9L"/>
+                <constraint firstItem="ISM-07-be2" firstAttribute="centerX" secondItem="Qad-Cn-uXg" secondAttribute="centerX" id="CtD-a6-6ZY"/>
+                <constraint firstItem="IfM-UK-hrP" firstAttribute="top" secondItem="Qad-Cn-uXg" secondAttribute="top" id="Pjz-WJ-gbL"/>
+                <constraint firstItem="y3s-C6-SAH" firstAttribute="trailing" secondItem="IfM-UK-hrP" secondAttribute="trailing" constant="-35" id="QNn-qg-obY"/>
+                <constraint firstItem="y3s-C6-SAH" firstAttribute="bottom" secondItem="IfM-UK-hrP" secondAttribute="bottom" id="bb8-wd-6dg"/>
+                <constraint firstItem="thg-Kg-Okj" firstAttribute="centerX" secondItem="IfM-UK-hrP" secondAttribute="centerX" id="hrg-aV-UsZ"/>
+                <constraint firstItem="ISM-07-be2" firstAttribute="top" secondItem="thg-Kg-Okj" secondAttribute="bottom" constant="120" id="j8O-69-e6c"/>
+                <constraint firstItem="IfM-UK-hrP" firstAttribute="width" secondItem="IfM-UK-hrP" secondAttribute="height" multiplier="660:550" id="mn6-gb-VkW"/>
+                <constraint firstItem="IfM-UK-hrP" firstAttribute="leading" secondItem="Qad-Cn-uXg" secondAttribute="leading" constant="25" id="rXw-Zc-upe"/>
+                <constraint firstItem="y3s-C6-SAH" firstAttribute="leading" secondItem="IfM-UK-hrP" secondAttribute="leading" constant="35" id="zoc-2y-GMm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="425.95419847328242" y="-326.40845070422534"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="checkInClose" width="80" height="80"/>
+        <image name="depositActivityBg" width="660" height="550"/>
+    </resources>
+</document>

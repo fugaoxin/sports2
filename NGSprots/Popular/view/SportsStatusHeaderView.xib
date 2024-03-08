@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="SportsStatusHeaderView" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-Ai-bQ1">
+                    <rect key="frame" x="5" y="49" width="5" height="5"/>
+                    <color key="backgroundColor" red="0.047058823529411764" green="0.83921568627450982" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="5" id="3Pa-3R-ulL"/>
+                        <constraint firstAttribute="height" constant="5" id="Ljs-5x-Zuf"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="2.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hO-ps-WvP">
+                    <rect key="frame" x="17" y="41.666666666666664" width="76" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" red="0.098039215686274508" green="0.14901960784313725" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saS-dN-qh1">
+                    <rect key="frame" x="293" y="37" width="65" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="7GL-CG-XjH"/>
+                        <constraint firstAttribute="height" constant="29" id="8UQ-4O-geg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="26" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Clear">
+                        <color key="titleColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clearClick:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="1gt-JC-JiP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lox-Ai-bQ1" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="5" id="H71-fk-oJZ"/>
+                <constraint firstItem="8hO-ps-WvP" firstAttribute="leading" secondItem="Lox-Ai-bQ1" secondAttribute="trailing" constant="7" id="JDZ-ub-UMX"/>
+                <constraint firstItem="saS-dN-qh1" firstAttribute="centerY" secondItem="8hO-ps-WvP" secondAttribute="centerY" id="PZK-L2-PMm"/>
+                <constraint firstItem="Lox-Ai-bQ1" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="tVK-Fp-a5I"/>
+                <constraint firstItem="8hO-ps-WvP" firstAttribute="centerY" secondItem="Lox-Ai-bQ1" secondAttribute="centerY" id="uqb-nm-oHn"/>
+                <constraint firstAttribute="trailing" secondItem="saS-dN-qh1" secondAttribute="trailing" id="vKZ-Kj-bfo"/>
+            </constraints>
+            <connections>
+                <outlet property="clearBtn" destination="saS-dN-qh1" id="fHh-hG-rtL"/>
+                <outlet property="titleLB" destination="8hO-ps-WvP" id="taL-Dr-iZw"/>
+            </connections>
+            <point key="canvasLocation" x="160.30534351145039" y="7.394366197183099"/>
+        </collectionReusableView>
+    </objects>
+</document>

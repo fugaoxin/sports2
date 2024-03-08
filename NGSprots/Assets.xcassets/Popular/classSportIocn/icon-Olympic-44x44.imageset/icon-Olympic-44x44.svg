@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="icon-Olympic-44x44" transform="translate(0.371)">
+    <circle id="椭圆形" cx="6" cy="6" r="6" transform="translate(1.629 13)" fill="none" stroke="#19263c" stroke-width="2"/>
+    <circle id="椭圆形备份" cx="6" cy="6" r="6" transform="translate(15.629 13)" fill="none" stroke="#19263c" stroke-width="2"/>
+    <circle id="椭圆形备份-2" cx="6" cy="6" r="6" transform="translate(29.629 13)" fill="none" stroke="#19263c" stroke-width="2"/>
+    <circle id="椭圆形备份-3" cx="6" cy="6" r="6" transform="translate(8.629 19)" fill="none" stroke="#19263c" stroke-width="2"/>
+    <circle id="椭圆形备份-4" cx="6" cy="6" r="6" transform="translate(22.629 19)" fill="none" stroke="#19263c" stroke-width="2"/>
+    <rect id="切图范围" width="44" height="44" transform="translate(-0.371)" fill="rgba(255,255,255,0)"/>
+  </g>
+</svg>

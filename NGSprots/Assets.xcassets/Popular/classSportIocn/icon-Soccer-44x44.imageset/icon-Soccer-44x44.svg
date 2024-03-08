@@ -1,0 +1,10 @@
+<svg id="icon-Soccer-44x44" xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <path id="椭圆形" d="M22,6A16,16,0,1,1,6,22,16,16,0,0,1,22,6Zm0,3A13,13,0,1,0,35,22,13,13,0,0,0,22,9Z" fill="#19263c"/>
+  <path id="多边形" d="M22,12l9.511,6.91L27.878,30.09H16.122L12.489,18.91Zm0,3.708-5.984,4.347L18.3,27.09h7.4l2.285-7.035Z" fill="#19263c"/>
+  <rect id="矩形" width="3" height="7" transform="translate(20.5 8)" fill="#19263c"/>
+  <path id="矩形-2" data-name="矩形" d="M0,0H3V7H0Z" transform="translate(25.216 28.761) rotate(-45)" fill="#19263c" fill-rule="evenodd"/>
+  <rect id="矩形-3" data-name="矩形" width="3" height="7" transform="translate(13.406 34.562) rotate(-135)" fill="#19263c"/>
+  <path id="矩形-4" data-name="矩形" d="M0,7H3V0H0Z" transform="translate(7.802 19.547) rotate(-74)" fill="#19263c" fill-rule="evenodd"/>
+  <path id="矩形-5" data-name="矩形" d="M0,0H3V7H0Z" transform="matrix(-0.276, -0.961, 0.961, -0.276, 29.629, 21.476)" fill="#19263c" fill-rule="evenodd"/>
+  <rect id="切图范围" width="44" height="44" fill="rgba(255,255,255,0)"/>
+</svg>

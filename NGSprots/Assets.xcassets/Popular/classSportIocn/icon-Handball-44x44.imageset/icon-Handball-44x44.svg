@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+  <g id="icon-Handball-44x44" transform="translate(0.044)">
+    <path id="路径-2" d="M15.708,13.019c-4.195,11.8,14.223,2.525,20.884,12.319" transform="translate(-0.372)" fill="none" stroke="#19263c" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+    <circle id="椭圆形" cx="4" cy="4" r="4" transform="translate(12.956 5)" fill="#19263c"/>
+    <circle id="椭圆形-2" data-name="椭圆形" cx="3" cy="3" r="3" transform="translate(21.956 11)" fill="#19263c"/>
+    <path id="路径-2-2" data-name="路径-2" d="M24.946,13.663C24.8,22.46,27.075,30.14,8.353,32.5" transform="translate(-0.372)" fill="none" stroke="#19263c" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+    <path id="路径-2-3" data-name="路径-2" d="M28.285,25.248C28.141,34.045,19.693,37.813,16.66,39" transform="translate(-0.372)" fill="none" stroke="#19263c" stroke-linecap="round" stroke-width="3" fill-rule="evenodd"/>
+    <rect id="切图范围" width="44" height="44" transform="translate(-0.044)" fill="rgba(255,255,255,0)"/>
+  </g>
+</svg>

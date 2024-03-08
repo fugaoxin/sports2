@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PBtViewCell" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49E-cx-sqy">
+                        <rect key="frame" x="32.666666666666657" y="30" width="85" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3M-3k-waK">
+                                <rect key="frame" x="31.333333333333336" y="19" width="22" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="0.94117647058823528" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suo_icon" translatesAutoresizingMaskIntoConstraints="NO" id="kiQ-Dv-faw">
+                                <rect key="frame" x="32.333333333333336" y="17.666666666666664" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="FAc-bh-lIG"/>
+                                    <constraint firstAttribute="width" constant="20" id="OAA-Ai-vgL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L3M-3k-waK" firstAttribute="centerX" secondItem="49E-cx-sqy" secondAttribute="centerX" id="2op-j5-acC"/>
+                            <constraint firstItem="kiQ-Dv-faw" firstAttribute="centerX" secondItem="49E-cx-sqy" secondAttribute="centerX" id="4zy-17-VSJ"/>
+                            <constraint firstAttribute="height" constant="55" id="FN6-xm-L0m"/>
+                            <constraint firstItem="kiQ-Dv-faw" firstAttribute="centerY" secondItem="49E-cx-sqy" secondAttribute="centerY" id="NvX-OF-Eew"/>
+                            <constraint firstAttribute="width" constant="85" id="Qwg-La-oFZ"/>
+                            <constraint firstItem="L3M-3k-waK" firstAttribute="centerY" secondItem="49E-cx-sqy" secondAttribute="centerY" id="ocZ-kg-boX"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sheng_icon" translatesAutoresizingMaskIntoConstraints="NO" id="s1L-lC-Nw6">
+                        <rect key="frame" x="70.666666666666671" y="39" width="9" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="9" id="FZr-7D-tWg"/>
+                            <constraint firstAttribute="height" constant="9" id="v3g-uD-9az"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0dA-Fn-iYV">
+                        <rect key="frame" x="75" y="0.0" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="9"/>
+                        <color key="textColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="s1L-lC-Nw6" firstAttribute="centerX" secondItem="L3M-3k-waK" secondAttribute="centerX" id="J64-lO-eDP"/>
+                <constraint firstItem="49E-cx-sqy" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="Ra2-2U-v3I"/>
+                <constraint firstAttribute="top" secondItem="0dA-Fn-iYV" secondAttribute="top" id="UbZ-Rn-UTL"/>
+                <constraint firstItem="L3M-3k-waK" firstAttribute="top" secondItem="s1L-lC-Nw6" secondAttribute="bottom" constant="1" id="Yim-05-BEO"/>
+                <constraint firstItem="49E-cx-sqy" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="ein-YC-IrI"/>
+                <constraint firstItem="0dA-Fn-iYV" firstAttribute="centerX" secondItem="49E-cx-sqy" secondAttribute="centerX" id="oRt-1E-3A4"/>
+            </constraints>
+            <connections>
+                <outlet property="bgview" destination="49E-cx-sqy" id="GN6-28-VnR"/>
+                <outlet property="odLabel" destination="L3M-3k-waK" id="rJk-rR-KXR"/>
+                <outlet property="suoimg" destination="kiQ-Dv-faw" id="exU-4K-Sjg"/>
+                <outlet property="titleLabel" destination="0dA-Fn-iYV" id="4yG-6Z-Thr"/>
+                <outlet property="typeimg" destination="s1L-lC-Nw6" id="cRH-gJ-H9i"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="20.422535211267608"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sheng_icon" width="14" height="10"/>
+        <image name="suo_icon" width="30" height="30"/>
+    </resources>
+</document>

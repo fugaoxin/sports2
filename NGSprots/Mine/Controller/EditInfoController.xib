@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditInfoController" customModule="NGSprots" customModuleProvider="target">
+            <connections>
+                <outlet property="headerBgView" destination="dGR-aW-ut1" id="MaN-qd-23l"/>
+                <outlet property="headerIV" destination="dco-0B-X42" id="RRE-i6-6gf"/>
+                <outlet property="tableView" destination="ao5-EY-xAg" id="6Dx-lE-QiN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGR-aW-ut1">
+                    <rect key="frame" x="0.0" y="50" width="375" height="160"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dco-0B-X42">
+                    <rect key="frame" x="144.66666666666666" y="87" width="86" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="0A4-jo-3VL"/>
+                        <constraint firstAttribute="width" constant="86" id="vvc-Tu-5Io"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="43"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnX-ml-69p">
+                    <rect key="frame" x="144.66666666666666" y="87" width="86" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="86" id="fm6-Oa-mfS"/>
+                        <constraint firstAttribute="width" constant="86" id="guM-QB-PdN"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="changeHeaderClick:" destination="-1" eventType="touchUpInside" id="FVm-l1-vWh"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="editHeader" translatesAutoresizingMaskIntoConstraints="NO" id="0yf-Re-QKD">
+                    <rect key="frame" x="208.66666666666666" y="151" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="63C-3m-WSs"/>
+                        <constraint firstAttribute="width" constant="22" id="fCs-7q-qug"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ao5-EY-xAg">
+                    <rect key="frame" x="0.0" y="220" width="375" height="558"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NnX-ml-69p" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="37" id="MQo-MJ-jzM"/>
+                <constraint firstItem="ao5-EY-xAg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QEW-3L-srk"/>
+                <constraint firstItem="dGR-aW-ut1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UML-dd-eih"/>
+                <constraint firstItem="ao5-EY-xAg" firstAttribute="top" secondItem="dGR-aW-ut1" secondAttribute="bottom" constant="10" id="V5A-fg-LyX"/>
+                <constraint firstItem="ao5-EY-xAg" firstAttribute="top" secondItem="NnX-ml-69p" secondAttribute="bottom" constant="47" id="aIG-Qj-MX7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dGR-aW-ut1" secondAttribute="trailing" id="k6t-me-jut"/>
+                <constraint firstItem="ao5-EY-xAg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kff-H5-7Q0"/>
+                <constraint firstItem="NnX-ml-69p" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="l6x-Cn-jEz"/>
+                <constraint firstItem="dco-0B-X42" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="37" id="qAD-Hs-BjI"/>
+                <constraint firstItem="0yf-Re-QKD" firstAttribute="bottom" secondItem="NnX-ml-69p" secondAttribute="bottom" id="u2o-a0-oCR"/>
+                <constraint firstItem="dco-0B-X42" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uQj-zk-C3z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ao5-EY-xAg" secondAttribute="bottom" id="vDL-w1-LXo"/>
+                <constraint firstItem="dGR-aW-ut1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zVP-dr-A0s"/>
+                <constraint firstItem="0yf-Re-QKD" firstAttribute="trailing" secondItem="NnX-ml-69p" secondAttribute="trailing" id="zq1-aP-nzw"/>
+            </constraints>
+            <point key="canvasLocation" x="128.80000000000001" y="-11.822660098522167"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="editHeader" width="44" height="44"/>
+        <image name="header_icon" width="120" height="120"/>
+    </resources>
+</document>

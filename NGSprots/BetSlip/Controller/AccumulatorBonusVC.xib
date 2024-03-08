@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccumulatorBonusVC" customModule="NGSprots" customModuleProvider="target">
+            <connections>
+                <outlet property="tableview" destination="GUw-r6-yFf" id="mH3-4g-OP5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="GUw-r6-yFf">
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                    <color key="backgroundColor" red="0.27058823529999998" green="0.015686274510000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdM-wg-rsT">
+                    <rect key="frame" x="11.666666666666657" y="776" width="370" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="J6S-4f-RsL"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="组 125185"/>
+                    <connections>
+                        <action selector="goBet:" destination="-1" eventType="touchUpInside" id="Ptk-Pn-sX1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.27058823529999998" green="0.015686274510000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gdM-wg-rsT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="11.5" id="DqI-0e-tjL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gdM-wg-rsT" secondAttribute="trailing" constant="11.5" id="IL5-Ro-A6S"/>
+                <constraint firstItem="GUw-r6-yFf" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KSm-5J-OQt"/>
+                <constraint firstItem="GUw-r6-yFf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PPi-HP-j3P"/>
+                <constraint firstAttribute="bottom" secondItem="gdM-wg-rsT" secondAttribute="bottom" constant="20" id="RWE-VP-ng2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GUw-r6-yFf" secondAttribute="trailing" id="Seo-Ug-geM"/>
+                <constraint firstAttribute="bottom" secondItem="GUw-r6-yFf" secondAttribute="bottom" id="uNb-JZ-wmh"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="组 125185" width="704" height="112"/>
+    </resources>
+</document>

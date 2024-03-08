@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="NGSprots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aex-Se-j0d">
+                        <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.12549019610000001" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLB-Ie-hnD">
+                        <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.12549019610000001" blue="0.4549019608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="jLB-Ie-hnD" firstAttribute="leading" secondItem="Aex-Se-j0d" secondAttribute="trailing" id="Avt-O8-vuJ"/>
+                    <constraint firstItem="jLB-Ie-hnD" firstAttribute="width" secondItem="Aex-Se-j0d" secondAttribute="width" multiplier="0.998305" id="Hqc-Mp-VOg"/>
+                    <constraint firstAttribute="trailing" secondItem="jLB-Ie-hnD" secondAttribute="trailing" id="LIA-J2-2nP"/>
+                    <constraint firstAttribute="bottom" secondItem="jLB-Ie-hnD" secondAttribute="bottom" id="RO0-sl-YLz"/>
+                    <constraint firstAttribute="bottom" secondItem="Aex-Se-j0d" secondAttribute="bottom" id="XUS-s9-MNA"/>
+                    <constraint firstItem="jLB-Ie-hnD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dKm-3z-QFd"/>
+                    <constraint firstItem="Aex-Se-j0d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ep9-cQ-ZNZ"/>
+                    <constraint firstItem="Aex-Se-j0d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="z0F-YB-EGq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="label1" destination="Aex-Se-j0d" id="WB1-HL-dTe"/>
+                <outlet property="label2" destination="jLB-Ie-hnD" id="NZT-5A-SqU"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="20"/>
+        </tableViewCell>
+    </objects>
+</document>
